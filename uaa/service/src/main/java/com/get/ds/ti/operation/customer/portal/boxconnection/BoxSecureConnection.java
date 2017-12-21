@@ -40,7 +40,7 @@ public class BoxSecureConnection {
 		try(Reader reader = new FileReader("config.json")) {
 			BoxConfig boxConfig = BoxConfig.readFrom(reader);
 			boxDeveloperEditionAPIConnection = BoxDeveloperEditionAPIConnection.getAppEnterpriseConnection(boxConfig);
-			//System.out.println("The enterprise user access token is: " + boxDeveloperEditionAPIConnection.getAccessToken());
+			//System.out.println("The enterprise user access token is - " + boxDeveloperEditionAPIConnection.getAccessToken());
 		} catch (java.io.IOException e) {
             // Log any errors for debugging
             e.printStackTrace();
